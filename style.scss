@@ -379,7 +379,7 @@ section {
                         }
 
                         p {
-                            font-size: 12px;
+                            font-size: 10px;
                             font-weight: 300;
                             line-height: 1.5;
                             color: $gray;
@@ -392,6 +392,11 @@ section {
                             flex-wrap: wrap;
 
                             li {
+                                display: -webkit-box;
+                                -webkit-line-clamp: 9;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                                 list-style: none;
                                 margin-right: 7px;
                                 background-color: $blue;
@@ -421,7 +426,7 @@ section {
                     height: 21rem;
                     .text {
                         .project {
-                            h1 {
+                            h3 {
                                 display: -webkit-box;
                                 -webkit-line-clamp: 2;
                                 -webkit-box-orient: vertical;

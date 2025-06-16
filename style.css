@@ -320,7 +320,7 @@ section#projects .content .card .text .project h3 {
   margin: 1rem 0;
 }
 section#projects .content .card .text .project p {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
   line-height: 1.5;
   color: #949494;
@@ -330,6 +330,11 @@ section#projects .content .card .text .program ul {
   flex-wrap: wrap;
 }
 section#projects .content .card .text .program ul li {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   list-style: none;
   margin-right: 7px;
   background-color: #5ea3fa;
@@ -350,7 +355,7 @@ section#projects a {
   section#projects .content .card {
     height: 21rem;
   }
-  section#projects .content .card .text .project h1 {
+  section#projects .content .card .text .project h3 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
