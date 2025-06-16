@@ -320,6 +320,11 @@ section#projects .content .card .text .project h3 {
   margin: 1rem 0;
 }
 section#projects .content .card .text .project p {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   font-weight: 300;
   line-height: 1.5;
@@ -330,11 +335,6 @@ section#projects .content .card .text .program ul {
   flex-wrap: wrap;
 }
 section#projects .content .card .text .program ul li {
-  display: -webkit-box;
-  -webkit-line-clamp: 9;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   list-style: none;
   margin-right: 7px;
   background-color: #5ea3fa;
